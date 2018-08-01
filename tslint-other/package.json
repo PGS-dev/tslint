@@ -1,0 +1,13 @@
+{
+  "name": "pgs-tslint-cfg",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "5.1.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "rxjs": "^6.2.2"
+  }
+}

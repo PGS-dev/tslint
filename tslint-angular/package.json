@@ -1,0 +1,20 @@
+{
+  "name": "pgs-tslint-cfg",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "codelyzer": "~4.2.1",
+    "rxjs-tslint-rules": "^4.3.0",
+    "tslint-eslint-rules": "5.1.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "@angular/common": "^6.1.0",
+    "@angular/compiler": "^6.1.0",
+    "@angular/core": "^6.1.0",
+    "@angular/platform-browser": "^6.1.0",
+    "@angular/platform-browser-dynamic": "^6.1.0",
+    "rxjs": "^6.2.2"
+  }
+}
