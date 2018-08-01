@@ -1,4 +1,4 @@
-# tslint
+tslint
 ------------
  
 PGS standard tslint rules.
