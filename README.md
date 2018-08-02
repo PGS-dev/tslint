@@ -3,7 +3,7 @@ tslint
  
 PGS standard tslint rules.
 
-In `tslint-angular` directory there are general rules for any angular 2+ projects.
+In `tslint-angular` directory there are general rules for any angular 2+ projects. (Rxjs rules are for v.6+ so might be removed for lower versions)
 
 In `tslint-other` directory there are general rules for any kind of projects.
 
