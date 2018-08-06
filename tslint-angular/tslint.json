@@ -1,6 +1,7 @@
 {
   "rulesDirectory": [
     "node_modules/codelyzer",
+    "node_modules/tslint-defocus/dist",
     "node_modules/tslint-eslint-rules/dist/rules",
     "node_modules/rxjs-tslint-rules/dist/rules"
   ],
@@ -39,6 +40,8 @@
     "no-extra-semi": true,
     "no-unexpected-multiline": true,
     "space-in-parens": [true, "never"],
+    "defocus": true,
+    "banana-in-box": true,
     "ter-arrow-spacing": true,
     "ter-computed-property-spacing": [true, "never"],
     "ter-func-call-spacing": [true, "never"],

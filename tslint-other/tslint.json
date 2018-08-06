@@ -1,5 +1,6 @@
 {
   "rulesDirectory": [
+    "node_modules/tslint-defocus/dist",
     "node_modules/tslint-eslint-rules/dist/rules"
   ],
   "rules": {
@@ -32,6 +33,7 @@
     "no-extra-semi": true,
     "no-unexpected-multiline": true,
     "space-in-parens": [true, "never"],
+    "defocus": true,
     "ter-arrow-spacing": true,
     "ter-computed-property-spacing": [true, "never"],
     "ter-func-call-spacing": [true, "never"],
