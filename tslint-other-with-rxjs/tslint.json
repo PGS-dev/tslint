@@ -23,11 +23,7 @@
     "rxjs-no-internal": true,
     "rxjs-no-create": true,
     "rxjs-finnish": true,
-    "array-bracket-spacing": [true, "always", {
-      "singleValue": false,
-      "objectsInArrays": false,
-      "arraysInArrays": false
-    }],
+    "array-bracket-spacing": [true, "never"],
     "block-spacing": [
       true,
       "always"
