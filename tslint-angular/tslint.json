@@ -89,9 +89,12 @@
     ],
     "interface-over-type-literal": true,
     "label-position": true,
-    "max-line-length": [
+    "max-line-length":  [
       true,
-      140
+      {
+        "limit": 140,
+        "ignore-pattern": "^import |^export {(.*?)}"
+      }
     ],
     "member-access": false,
     "member-ordering": [
