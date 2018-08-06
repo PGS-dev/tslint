@@ -133,14 +133,7 @@
     "no-empty": false,
     "no-empty-interface": true,
     "no-eval": true,
-    "no-implicit-dependencies": [true, "dev", [
-      "dt-player",
-      "dt-shared",
-      "dt-loader",
-      "dt-table",
-      "dt-timeline",
-      "dt-wordcloud"
-    ]],
+    "no-implicit-dependencies": [true, "dev"],
     "no-inferrable-types": [
       false,
       "ignore-params"
@@ -206,10 +199,7 @@
       true,
       "attribute",
       [
-        "app",
-        "layout",
-        "library",
-        "cd"
+        "app"
       ],
       "camelCase"
     ],
@@ -217,10 +207,7 @@
       true,
       "element",
       [
-        "app",
-        "layout",
-        "library",
-        "cd"
+        "app"
       ],
       "kebab-case"
     ],
