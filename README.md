@@ -33,3 +33,7 @@ Optional rules
         "singleline": "never"
       }
     }
+
+Prettier
+--------
+Prettier is an opinionated code formatter with some options that can be configured. Each of the rules folder got settings recommended by PGS.
