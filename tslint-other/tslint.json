@@ -8,7 +8,6 @@
     "no-string-literal": true,
     "object-literal-sort-keys": false,
     "ter-arrow-body-style": [true, "as-needed"],
-    "ter-padded-blocks": false,
     "trailing-comma": [
       true,
       {
