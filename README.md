@@ -21,9 +21,6 @@ Optional rules
 `ter-arrow-body-style` - there might be an issue with code line length 
 (moving code to new line might not be nice when it comes to aesthetic)
 
-`ter-padded-blocks` - can be set as [true, "never"] but it's kind of bugged 
-(falsely triggers error when there is none when comments are added is specific places)
-
 `trailing-comma` - can be set as the cfg below if you don't like trailing commas.
 
     {
