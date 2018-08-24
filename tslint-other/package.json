@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "tslint": "^5.11.0",
-    "tslint-eslint-rules": "5.1.0",
+    "tslint-eslint-rules": "5.4.0",
     "tslint-defocus": "^2.0.3",
     "typescript": "^3.0.1"
   },

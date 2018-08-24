@@ -34,6 +34,7 @@
     "ter-computed-property-spacing": [true, "never"],
     "ter-func-call-spacing": [true, "never"],
     "ter-newline-after-var": [true, "always"],
+    "ter-padded-blocks": [true, "never"],
     "no-multi-spaces": true,
     "array-type": [true, "array"],
     "match-default-export-name": true,
