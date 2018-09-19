@@ -88,11 +88,12 @@
     ],
     "interface-over-type-literal": true,
     "label-position": true,
-    "max-line-length":  [
+    "ter-max-len": [
       true,
       {
-        "limit": 140,
-        "ignore-pattern": "^import |^export {(.*?)}"
+        "code": 140,
+        "ignoreImports": true,
+        "ignorePattern": "^export "
       }
     ],
     "member-access": false,
