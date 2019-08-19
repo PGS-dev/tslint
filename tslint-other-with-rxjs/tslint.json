@@ -1,10 +1,65 @@
 {
   "rulesDirectory": [
+    "tslint-consistent-codestyle",
     "node_modules/tslint-defocus/dist",
     "node_modules/tslint-eslint-rules/dist/rules",
     "node_modules/rxjs-tslint-rules/dist/rules"
   ],
   "rules": {
+    "use-isnan": true,
+    "valid-jsdoc": true,
+    "valid-typeof": true,
+    "switch-default": true,
+    "ter-no-self-compare": true,
+    "no-magic-numbers": [true, {"enforceConst":  true}],
+    "object-shorthand-properties-first": true,
+    "no-static-this": true,
+    "no-return-undefined": true,
+    "no-else-after-return": true,
+    "no-unnecessary-else": true,
+    "no-collapsible-if": true,
+    "no-accessor-recursion": true,
+    "early-exit": {
+      "severity": "warn"
+    },
+    "naming-convention": {
+      "severity": "warn",
+      "options": [
+        {
+          "type": "class",
+          "format": "PascalCase"
+        },
+        {
+          "type": "class",
+          "modifiers": "abstract",
+          "prefix": "Abstract"
+        },
+        {
+          "type": "enum",
+          "format": "PascalCase"
+        },
+        {
+          "type": "interface",
+          "format": "PascalCase"
+        },
+        {
+          "type": "variable",
+          "format": "camelCase"
+        },
+        {
+          "type": "property",
+          "format": "camelCase"
+        },
+        {
+          "type": "method",
+          "format": "camelCase"
+        },
+        {
+          "type": "static",
+          "format": "camelCase"
+        }
+      ]
+    },
     "interface-name": [true, "always-prefix"],
     "no-string-literal": true,
     "object-literal-sort-keys": false,
@@ -148,7 +203,6 @@
     "no-switch-case-fall-through": true,
     "no-trailing-whitespace": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-shorthand": true,
     "one-line": [
