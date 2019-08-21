@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
-    "rxjs-tslint-rules": "^4.3.0",
-    "tslint": "^5.11.0",
-    "tslint-eslint-rules": "5.4.0",
-    "tslint-defocus": "^2.0.3",
-    "typescript": "^3.0.1"
+    "rxjs-tslint-rules": "^4.24.3",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint": "^5.18.0",
+    "tslint-defocus": "^2.0.6",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "typescript": "^3.5.3"
   },
   "dependencies": {
     "rxjs": "^6.2.2"

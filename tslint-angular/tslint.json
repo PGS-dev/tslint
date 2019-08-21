@@ -1,11 +1,80 @@
 {
   "rulesDirectory": [
+    "tslint-consistent-codestyle",
     "node_modules/codelyzer",
     "node_modules/tslint-defocus/dist",
     "node_modules/tslint-eslint-rules/dist/rules",
     "node_modules/rxjs-tslint-rules/dist/rules"
   ],
   "rules": {
+    "contextual-decorator": true,
+    "contextual-lifecycle": true,
+    "no-lifecycle-call": true,
+    "no-output-native": true,
+    "template-no-any": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "no-conflicting-lifecycle": true,
+    "prefer-output-readonly": true,
+    "use-component-selector": true,
+    "use-pipe-decorator": true,
+    "import-destructuring-spacing": true,
+    "relative-url-prefix": true,
+    "no-unused-css": true,
+    "use-isnan": true,
+    "valid-jsdoc": true,
+    "valid-typeof": true,
+    "switch-default": true,
+    "ter-no-self-compare": true,
+    "no-magic-numbers": [true, {"enforceConst":  true}],
+    "object-shorthand-properties-first": true,
+    "no-static-this": true,
+    "no-return-undefined": true,
+    "no-else-after-return": true,
+    "no-unnecessary-else": true,
+    "no-collapsible-if": true,
+    "no-accessor-recursion": true,
+    "early-exit": {
+      "severity": "warn"
+    },
+    "naming-convention": {
+      "severity": "warn",
+      "options": [
+        {
+          "type": "class",
+          "format": "PascalCase"
+        },
+        {
+          "type": "class",
+          "modifiers": "abstract",
+          "prefix": "Abstract"
+        },
+        {
+          "type": "enum",
+          "format": "PascalCase"
+        },
+        {
+          "type": "interface",
+          "format": "PascalCase"
+        },
+        {
+          "type": "variable",
+          "format": "camelCase"
+        },
+        {
+          "type": "property",
+          "format": "camelCase"
+        },
+        {
+          "type": "method",
+          "format": "camelCase"
+        },
+        {
+          "type": "static",
+          "format": "camelCase"
+        }
+      ]
+    },
     "interface-name": [true, "always-prefix"],
     "no-string-literal": true,
     "object-literal-sort-keys": false,
@@ -141,7 +210,7 @@
       false,
       "ignore-params"
     ],
-    "no-attribute-parameter-decorator": true,
+    "no-attribute-decorator": true,
     "no-this-assignment": true,
     "prefer-object-spread": true,
     "no-misused-new": true,
@@ -152,7 +221,6 @@
     "no-switch-case-fall-through": true,
     "no-trailing-whitespace": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-shorthand": true,
     "one-line": [
@@ -215,9 +283,9 @@
       "kebab-case"
     ],
     "no-output-on-prefix": false,
-    "use-input-property-decorator": true,
-    "use-output-property-decorator": true,
-    "use-host-property-decorator": true,
+    "no-inputs-metadata-property": true,
+    "no-outputs-metadata-property": true,
+    "no-host-metadata-property": true,
     "no-input-rename": true,
     "no-output-rename": true,
     "use-life-cycle-interface": true,
