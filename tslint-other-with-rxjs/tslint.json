@@ -7,7 +7,17 @@
   ],
   "rules": {
     "use-isnan": true,
-    "valid-jsdoc": true,
+    "valid-jsdoc": [true, {
+      "prefer": {
+        "return": "returns",
+        "params": "param"
+      },
+      "requireReturn": false,
+      "requireParamType": false,
+      "requireReturnType": false,
+      "requireParamDescription": false,
+      "requireReturnDescription": false
+    }],
     "valid-typeof": true,
     "switch-default": true,
     "ter-no-self-compare": true,
