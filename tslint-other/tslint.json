@@ -20,7 +20,10 @@
     "valid-typeof": true,
     "switch-default": true,
     "ter-no-self-compare": true,
-    "no-magic-numbers": [true, {"enforceConst":  true}],
+    "no-magic-numbers": [true, {
+      "enforceConst":  true,
+      "allowed-numbers": [-1, 0, 1]
+    }],
     "object-shorthand-properties-first": true,
     "no-static-this": true,
     "no-return-undefined": true,
@@ -52,6 +55,17 @@
           "format": "PascalCase"
         },
         {
+          "modifiers": ["global", "export"],
+          "type": "variable",
+          "format": ["snake_case", "UPPER_CASE"]
+        },
+        {
+          "modifiers": ["global", "export"],
+          "type": "functionVariable",
+          "format": ["camelCase"]
+        },
+        {
+          "modifiers": ["local"],
           "type": "variable",
           "format": "camelCase"
         },
