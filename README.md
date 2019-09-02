@@ -30,3 +30,5 @@ Optional rules
         "singleline": "never"
       }
     }
+    
+`naming-convention` - can be slightly adjusted per project depending on devs preferences
