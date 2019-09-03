@@ -32,3 +32,27 @@ Optional rules
     }
     
 `naming-convention` - can be slightly adjusted per project depending on devs preferences
+
+How to use
+------------
+Verify which version you need from the 3 versions available
+- `tslint-angular/tslint.json`
+- `tslint-other/tslint.json`
+- `tslint-other-with-rxjs/tslint.json`
+
+Update project `package.json` file with proper libraries from repo version of `package.json`
+
+Create file `pgs-lint.json` right beside project `tslint.json` file.
+
+Copy-paste content from repo `tslint.json` to your newly created `pgs-lint.json`
+
+Update your project `tslint.json` as below:
+
+    {
+      "extends": "./tslint-pgs.json",
+      "rules": {}
+    }
+    
+Update `pgs-lint.json` file only when changes are pushed to official repo.
+
+Update `tslint.json` rules to overwrite optional official rules or add unofficial additional ones.
