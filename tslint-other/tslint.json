@@ -203,7 +203,7 @@
     "no-empty": false,
     "no-empty-interface": true,
     "no-eval": true,
-    "no-implicit-dependencies": [true, "dev"],
+    "no-implicit-dependencies": [true, "dev", "optional"],
     "no-inferrable-types": [
       false,
       "ignore-params"
