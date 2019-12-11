@@ -20,7 +20,6 @@
     "use-pipe-decorator": true,
     "import-destructuring-spacing": true,
     "relative-url-prefix": true,
-    "no-unused-css": true,
     "use-isnan": true,
     "valid-jsdoc": [true, {
       "prefer": {
