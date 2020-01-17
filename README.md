@@ -5,7 +5,7 @@ PGS standard tslint rules.
 
 `tslint.json` file contains general rules for any TypeScript project.
 
-`tslint-other-with-rxjs` file contains general rules for any TypeScript project with RxJS.
+`tslint-rxjs.json` file contains general rules for any TypeScript project with RxJS.
 
 `tslint-angular.json` file contains general rules for any angular projects.
 
