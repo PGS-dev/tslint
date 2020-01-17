@@ -1,9 +1,9 @@
 {
   "rulesDirectory": [
-    "tslint-consistent-codestyle",
-    "node_modules/tslint-defocus/dist",
-    "node_modules/tslint-eslint-rules/dist/rules",
-    "node_modules/rxjs-tslint-rules/dist/rules"
+    "../tslint-consistent-codestyle/rules",
+    "../tslint-defocus/dist",
+    "../tslint-eslint-rules/dist/rules",
+    "../rxjs-tslint-rules/dist/rules"
   ],
   "rules": {
     "use-isnan": true,

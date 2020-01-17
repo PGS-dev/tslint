@@ -1,0 +1,29 @@
+{
+  "author": "Robert Kubisiak",
+  "description": "PGS tslint rules",
+  "devDependencies": {
+    "codelyzer": "^5.1.0",
+    "rxjs-tslint-rules": "^4.25.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint": "^5.20.0",
+    "tslint-defocus": "^2.0.6",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "typescript": "^3.5.3"
+  },
+  "files": [
+    "tslint.json",
+    "tslint-rxjs.json",
+    "tslint-angular.json",
+    "package.json"
+  ],
+  "name": "pgs-dev-tslint",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PGS-dev/tslint"
+  },
+  "scripts": {
+    "prepublishOnly": "npx tsc -d"
+  },
+  "version": "1.0.1"
+}

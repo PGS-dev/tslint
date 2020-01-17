@@ -3,11 +3,11 @@ tslint
  
 PGS standard tslint rules.
 
-In `tslint-angular` directory there are general rules for any angular 2+ projects. (Rxjs rules are for rxjs v.6+ so might be removed for lower versions)
+`tslint.json` file contains general rules for any TypeScript project.
 
-In `tslint-other` directory there are general rules for any kind of projects.
+`tslint-other-with-rxjs` file contains general rules for any TypeScript project with RxJS.
 
-In `tslint-other-with-rxjs` directory there are general rules for any kind of projects with rxjs.
+`tslint-angular.json` file contains general rules for any angular projects.
 
 
 Optional rules
@@ -16,7 +16,7 @@ Optional rules
 
 `no-string-literal` - there might be an issue with testing private methods etc.
 
-`object-literal-sort-keys` - nice to have, but no auto fix === time consuming
+`object-literal-sort-keys` - nice to have, but no auto fix -> time consuming
 
 `ter-arrow-body-style` - there might be an issue with code line length 
 (moving code to new line might not be nice when it comes to aesthetic)
@@ -35,24 +35,8 @@ Optional rules
 
 How to use
 ------------
-Verify which version you need from the 3 versions available
-- `tslint-angular/tslint.json`
-- `tslint-other/tslint.json`
-- `tslint-other-with-rxjs/tslint.json`
+Verify which version you need from the 3 versions available (`tslint.json`, `tslint-rxjs.json`, `tslint-angular.json`)
 
-Update project `package.json` file with proper libraries from repo version of `package.json`
+Update your project `tslint.json` to extend rules from previously selected file.
 
-Create file `pgs-lint.json` right beside project `tslint.json` file.
-
-Copy-paste content from repo `tslint.json` to your newly created `pgs-lint.json`
-
-Update your project `tslint.json` as below:
-
-    {
-      "extends": "./tslint-pgs.json",
-      "rules": {}
-    }
-    
-Update `pgs-lint.json` file only when changes are pushed to official repo.
-
-Update `tslint.json` rules to overwrite optional official rules or add unofficial additional ones.
+Update `tslint.json` rules to overwrite optional official rules or add unofficial ones if needed.

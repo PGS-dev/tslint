@@ -1,25 +1,10 @@
 {
   "rulesDirectory": [
-    "tslint-consistent-codestyle",
-    "node_modules/codelyzer",
-    "node_modules/tslint-defocus/dist",
-    "node_modules/tslint-eslint-rules/dist/rules",
-    "node_modules/rxjs-tslint-rules/dist/rules"
+    "../tslint-consistent-codestyle/rules",
+    "../tslint-defocus/dist",
+    "../tslint-eslint-rules/dist/rules"
   ],
   "rules": {
-    "contextual-decorator": true,
-    "contextual-lifecycle": true,
-    "no-lifecycle-call": true,
-    "no-output-native": true,
-    "template-no-any": true,
-    "template-no-negated-async": true,
-    "use-lifecycle-interface": true,
-    "no-conflicting-lifecycle": true,
-    "prefer-output-readonly": true,
-    "use-component-selector": true,
-    "use-pipe-decorator": true,
-    "import-destructuring-spacing": true,
-    "relative-url-prefix": true,
     "use-isnan": true,
     "valid-jsdoc": [true, {
       "prefer": {
@@ -110,11 +95,6 @@
         "esSpecCompliant": true
       }
     ],
-    "rxjs-no-subject-value": true,
-    "rxjs-no-unsafe-takeuntil": true,
-    "rxjs-no-internal": true,
-    "rxjs-no-create": true,
-    "rxjs-finnish": true,
     "array-bracket-spacing": [true, "never"],
     "block-spacing": [
       true,
@@ -128,7 +108,6 @@
     "no-unexpected-multiline": true,
     "space-in-parens": [true, "never"],
     "defocus": true,
-    "template-banana-in-box": true,
     "ter-arrow-spacing": true,
     "ter-computed-property-spacing": [true, "never"],
     "ter-func-call-spacing": [true, "never"],
@@ -168,10 +147,6 @@
     },
     "eofline": true,
     "forin": true,
-    "import-blacklist": [
-      true,
-      "rxjs/Rx"
-    ],
     "import-spacing": true,
     "indent": [
       true,
@@ -233,7 +208,6 @@
       false,
       "ignore-params"
     ],
-    "no-attribute-decorator": true,
     "no-this-assignment": true,
     "prefer-object-spread": true,
     "no-misused-new": true,
@@ -288,32 +262,6 @@
       "check-separator",
       "check-type"
     ],
-    "no-consecutive-blank-lines": true,
-    "directive-selector": [
-      true,
-      "attribute",
-      [
-        "app"
-      ],
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      [
-        "app"
-      ],
-      "kebab-case"
-    ],
-    "no-output-on-prefix": false,
-    "no-inputs-metadata-property": true,
-    "no-outputs-metadata-property": true,
-    "no-host-metadata-property": true,
-    "no-input-rename": true,
-    "no-output-rename": true,
-    "use-life-cycle-interface": true,
-    "use-pipe-transform-interface": true,
-    "component-class-suffix": true,
-    "directive-class-suffix": true
+    "no-consecutive-blank-lines": true
   }
 }
