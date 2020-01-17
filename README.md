@@ -1,4 +1,6 @@
-tslint
+![alt text](https://raw.githubusercontent.com/PGS-dev/tslint/master/pgs-logo-200.png)
+
+PGS-dev-tslint
 ------------
  
 PGS standard tslint rules.
