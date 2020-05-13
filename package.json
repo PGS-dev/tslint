@@ -2,11 +2,11 @@
   "author": "Robert Kubisiak",
   "description": "PGS tslint rules",
   "dependencies": {
-    "codelyzer": "^5.1.0",
-    "rxjs-tslint-rules": "^4.25.0",
-    "tslint-eslint-rules": "^5.4.0",
-    "tslint-defocus": "^2.0.6",
-    "tslint-consistent-codestyle": "^1.15.1"
+    "codelyzer": "^5.2.1",
+    "rxjs-tslint-rules": "4.29.1",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-defocus": "2.0.6",
+    "tslint-consistent-codestyle": "1.16.0"
   },
   "peerDependencies": {
     "tslint": "^5.20.0",
@@ -27,5 +27,5 @@
   "scripts": {
     "prepublishOnly": "npx tsc -d"
   },
-  "version": "1.0.5"
+  "version": "1.0.7"
 }

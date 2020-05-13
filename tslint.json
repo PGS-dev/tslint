@@ -231,7 +231,8 @@
     "prefer-const": true,
     "quotemark": [
       true,
-      "single"
+      "single",
+      "jsx-double"
     ],
     "radix": true,
     "semicolon": true,
