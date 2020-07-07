@@ -6,6 +6,74 @@
     "../rxjs-tslint-rules/dist/rules"
   ],
   "rules": {
+    "align": {
+      "options": [
+        "parameters",
+        "statements"
+      ]
+    },
+    "max-classes-per-file": false,
+    "max-line-length": [
+      true,
+      {
+        "limit": 140,
+        "ignore-pattern": "^import |^export {(.*?)}"
+      }
+    ],
+    "no-any": true,
+    "no-redundant-jsdoc": true,
+    "no-var-requires": false,
+    "space-before-function-paren": {
+      "options": {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    },
+    "variable-name": false,
+    "deprecation": {
+      "severity": "warning"
+    },
+    "indent": {
+      "options": [
+        "spaces",
+        2
+      ]
+    },
+    "typedef": [
+      true,
+      "parameter",
+      "call-signature"
+    ],
+    "typedef-whitespace": {
+      "options": [
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ]
+    },
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type",
+      "check-typecast"
+    ],
     "use-isnan": true,
     "valid-jsdoc": [true, {
       "prefer": {
@@ -148,9 +216,6 @@
       "check-space"
     ],
     "curly": true,
-    "deprecation": {
-      "severity": "warn"
-    },
     "eofline": true,
     "forin": true,
     "import-blacklist": [
@@ -158,21 +223,8 @@
       "rxjs/Rx"
     ],
     "import-spacing": true,
-    "indent": [
-      true,
-      "spaces",
-      2
-    ],
     "interface-over-type-literal": true,
     "label-position": true,
-    "ter-max-len": [
-      true,
-      {
-        "code": 140,
-        "ignoreImports": true,
-        "ignorePattern": "^export "
-      }
-    ],
     "member-access": false,
     "member-ordering": [
       true,
@@ -250,29 +302,7 @@
       true,
       "allow-null-check"
     ],
-    "typedef": [
-      true,
-      "parameter"
-    ],
-    "typedef-whitespace": [
-      true,
-      {
-        "call-signature": "nospace",
-        "index-signature": "nospace",
-        "parameter": "nospace",
-        "property-declaration": "nospace",
-        "variable-declaration": "nospace"
-      }
-    ],
     "unified-signatures": true,
-    "variable-name": false,
-    "whitespace": [
-      true,
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type"
-    ],
     "no-consecutive-blank-lines": true
   }
 }

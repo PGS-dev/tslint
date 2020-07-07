@@ -2,15 +2,15 @@
   "author": "Robert Kubisiak",
   "description": "PGS tslint rules",
   "dependencies": {
-    "codelyzer": "^5.2.1",
-    "rxjs-tslint-rules": "4.29.1",
+    "codelyzer": "^6.0.0",
+    "rxjs-tslint-rules": "4.33.3",
     "tslint-eslint-rules": "5.4.0",
     "tslint-defocus": "2.0.6",
     "tslint-consistent-codestyle": "1.16.0"
   },
   "peerDependencies": {
-    "tslint": "^5.20.0",
-    "typescript": "^3.5.3"
+    "tslint": "~6.1.0",
+    "typescript": "~3.9.5"
   },
   "files": [
     "tslint.json",
@@ -27,5 +27,5 @@
   "scripts": {
     "prepublishOnly": "npx tsc -d"
   },
-  "version": "1.0.7"
+  "version": "1.0.8"
 }
