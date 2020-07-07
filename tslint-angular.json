@@ -344,7 +344,6 @@
       }
     ],
     "no-queries-metadata-property": true,
-    "angular-whitespace": [true, "check-interpolation", "check-pipe", "check-semicolon"],
     "contextual-decorator": true,
     "contextual-lifecycle": true,
     "no-lifecycle-call": true,

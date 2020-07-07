@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [10.1.1] - 2020.07.08
+
+### Removed
+
+- Angular only TSLint rules:
+    - angular-whitespace
+
 ## [10.1.0] - 2020.07.08
 
 ### Added
