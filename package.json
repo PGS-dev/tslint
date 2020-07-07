@@ -2,7 +2,7 @@
   "author": "Robert Kubisiak",
   "description": "PGS tslint rules",
   "dependencies": {
-    "codelyzer": "^6.0.0",
+    "codelyzer": "^5.2.1",
     "rxjs-tslint-rules": "4.33.3",
     "tslint-eslint-rules": "5.4.0",
     "tslint-defocus": "2.0.6",
@@ -10,7 +10,7 @@
   },
   "peerDependencies": {
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "typescript": "~3.9.6"
   },
   "files": [
     "tslint.json",
