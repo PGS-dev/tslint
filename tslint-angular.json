@@ -13,16 +13,10 @@
         "statements"
       ]
     },
-    "max-classes-per-file": false,
-    "max-line-length": [
-      true,
-      {
-        "limit": 140,
-        "ignore-pattern": "^import |^export {(.*?)}"
-      }
-    ],
+    "max-classes-per-file": true,
     "no-any": {
-      "severity": "warning"
+      "severity": "warning",
+      "options": {"ignore-rest-args": true}
     },
     "no-redundant-jsdoc": true,
     "no-var-requires": false,
@@ -35,48 +29,6 @@
         "named": "never"
       }
     },
-    "variable-name": false,
-    "deprecation": {
-      "severity": "warning"
-    },
-    "indent": {
-      "options": [
-        "spaces",
-        2
-      ]
-    },
-    "typedef": [
-      true,
-      "parameter",
-      "call-signature"
-    ],
-    "typedef-whitespace": {
-      "options": [
-        {
-          "call-signature": "nospace",
-          "index-signature": "nospace",
-          "parameter": "nospace",
-          "property-declaration": "nospace",
-          "variable-declaration": "nospace"
-        },
-        {
-          "call-signature": "onespace",
-          "index-signature": "onespace",
-          "parameter": "onespace",
-          "property-declaration": "onespace",
-          "variable-declaration": "onespace"
-        }
-      ]
-    },
-    "whitespace": [
-      true,
-      "check-branch",
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type",
-      "check-typecast"
-    ],
     "ban-types": [
       true,
       ["Object", "Use {} instead."],
@@ -84,7 +36,6 @@
       ["Boolean", "Use boolean instead"],
       ["Number", "Use number instead"]
     ],
-    "member-access": [true, "no-public"],
     "no-parameter-reassignment": true,
     "ban-comma-operator": true,
     "no-object-literal-type-assertion": true,
@@ -93,19 +44,9 @@
     "no-angle-bracket-type-assertion": true,
     "prefer-template": true,
     "unnecessary-constructor": [true, {"check-super-calls": true}],
-    "contextual-decorator": true,
-    "contextual-lifecycle": true,
-    "no-lifecycle-call": true,
-    "no-output-native": true,
-    "template-no-any": true,
-    "template-no-negated-async": true,
-    "use-lifecycle-interface": true,
-    "no-conflicting-lifecycle": true,
-    "prefer-output-readonly": true,
-    "use-component-selector": true,
-    "use-pipe-decorator": true,
-    "import-destructuring-spacing": true,
-    "relative-url-prefix": true,
+    "no-ex-assign": true,
+    "ter-no-proto": true,
+    "ter-no-mixed-spaces-and-tabs": true,
     "use-isnan": true,
     "valid-jsdoc": [true, {
       "prefer": {
@@ -196,11 +137,6 @@
         "esSpecCompliant": true
       }
     ],
-    "rxjs-no-subject-value": true,
-    "rxjs-no-unsafe-takeuntil": true,
-    "rxjs-no-internal": true,
-    "rxjs-no-create": true,
-    "rxjs-finnish": true,
     "array-bracket-spacing": [true, "never"],
     "block-spacing": [
       true,
@@ -214,7 +150,6 @@
     "no-unexpected-multiline": true,
     "space-in-parens": [true, "never"],
     "defocus": true,
-    "template-banana-in-box": true,
     "ter-arrow-spacing": true,
     "ter-computed-property-spacing": [true, "never"],
     "ter-func-call-spacing": [true, "never"],
@@ -249,15 +184,28 @@
       "check-space"
     ],
     "curly": true,
+    "deprecation": {
+      "severity": "warning"
+    },
     "eofline": true,
     "forin": true,
-    "import-blacklist": [
-      true,
-      "rxjs/Rx"
-    ],
     "import-spacing": true,
+    "indent": {
+      "options": [
+        "spaces",
+        2
+      ]
+    },
     "interface-over-type-literal": true,
     "label-position": true,
+    "max-line-length": [
+      true,
+      {
+        "limit": 140,
+        "ignore-pattern": "^import |^export {(.*?)}"
+      }
+    ],
+    "member-access": [true, "no-public"],
     "member-ordering": [
       true,
       {
@@ -302,7 +250,6 @@
       false,
       "ignore-params"
     ],
-    "no-attribute-decorator": true,
     "no-this-assignment": true,
     "prefer-object-spread": true,
     "no-misused-new": true,
@@ -334,8 +281,85 @@
       true,
       "allow-null-check"
     ],
+    "typedef": [
+      true,
+      "parameter",
+      "arrow-parameter",
+      "arrow-call-signature",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration",
+      "object-destructuring",
+      "array-destructuring",
+      "call-signature"
+    ],
+    "typedef-whitespace": {
+      "options": [
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ]
+    },
     "unified-signatures": true,
+    "variable-name": false,
+    "whitespace": [
+      true,
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
     "no-consecutive-blank-lines": true,
+    "rxjs-no-subject-value": true,
+    "rxjs-no-unsafe-takeuntil": true,
+    "rxjs-no-internal": true,
+    "rxjs-no-create": true,
+    "rxjs-finnish": true,
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
+    "template-conditional-complexity": [true, 4],
+    "use-component-view-encapsulation": true,
+    "prefer-inline-decorator": [
+      true,
+      {
+        "getters": true,
+        "setters": true,
+        "methods": false,
+        "parameter-properties": false,
+        "parameters": false,
+        "properties": true
+      }
+    ],
+    "no-queries-metadata-property": true,
+    "angular-whitespace": [true, "check-interpolation", "check-pipe", "check-semicolon"],
+    "contextual-decorator": true,
+    "contextual-lifecycle": true,
+    "no-lifecycle-call": true,
+    "no-output-native": true,
+    "template-no-any": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "no-conflicting-lifecycle": true,
+    "prefer-output-readonly": true,
+    "use-component-selector": true,
+    "use-pipe-decorator": true,
+    "import-destructuring-spacing": true,
+    "relative-url-prefix": true,
+    "template-banana-in-box": true,
+    "no-attribute-decorator": true,
     "directive-selector": [
       true,
       "attribute",

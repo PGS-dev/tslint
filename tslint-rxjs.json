@@ -12,16 +12,10 @@
         "statements"
       ]
     },
-    "max-classes-per-file": false,
-    "max-line-length": [
-      true,
-      {
-        "limit": 140,
-        "ignore-pattern": "^import |^export {(.*?)}"
-      }
-    ],
+    "max-classes-per-file": true,
     "no-any": {
-      "severity": "warning"
+      "severity": "warning",
+      "options": {"ignore-rest-args": true}
     },
     "no-redundant-jsdoc": true,
     "no-var-requires": false,
@@ -34,48 +28,6 @@
         "named": "never"
       }
     },
-    "variable-name": false,
-    "deprecation": {
-      "severity": "warning"
-    },
-    "indent": {
-      "options": [
-        "spaces",
-        2
-      ]
-    },
-    "typedef": [
-      true,
-      "parameter",
-      "call-signature"
-    ],
-    "typedef-whitespace": {
-      "options": [
-        {
-          "call-signature": "nospace",
-          "index-signature": "nospace",
-          "parameter": "nospace",
-          "property-declaration": "nospace",
-          "variable-declaration": "nospace"
-        },
-        {
-          "call-signature": "onespace",
-          "index-signature": "onespace",
-          "parameter": "onespace",
-          "property-declaration": "onespace",
-          "variable-declaration": "onespace"
-        }
-      ]
-    },
-    "whitespace": [
-      true,
-      "check-branch",
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type",
-      "check-typecast"
-    ],
     "ban-types": [
       true,
       ["Object", "Use {} instead."],
@@ -83,7 +35,6 @@
       ["Boolean", "Use boolean instead"],
       ["Number", "Use number instead"]
     ],
-    "member-access": [true, "no-public"],
     "no-parameter-reassignment": true,
     "ban-comma-operator": true,
     "no-object-literal-type-assertion": true,
@@ -92,6 +43,9 @@
     "no-angle-bracket-type-assertion": true,
     "prefer-template": true,
     "unnecessary-constructor": [true, {"check-super-calls": true}],
+    "no-ex-assign": true,
+    "ter-no-proto": true,
+    "ter-no-mixed-spaces-and-tabs": true,
     "use-isnan": true,
     "valid-jsdoc": [true, {
       "prefer": {
@@ -182,11 +136,6 @@
         "esSpecCompliant": true
       }
     ],
-    "rxjs-no-subject-value": true,
-    "rxjs-no-unsafe-takeuntil": true,
-    "rxjs-no-internal": true,
-    "rxjs-no-create": true,
-    "rxjs-finnish": true,
     "array-bracket-spacing": [true, "never"],
     "block-spacing": [
       true,
@@ -234,15 +183,28 @@
       "check-space"
     ],
     "curly": true,
+    "deprecation": {
+      "severity": "warning"
+    },
     "eofline": true,
     "forin": true,
-    "import-blacklist": [
-      true,
-      "rxjs/Rx"
-    ],
     "import-spacing": true,
+    "indent": {
+      "options": [
+        "spaces",
+        2
+      ]
+    },
     "interface-over-type-literal": true,
     "label-position": true,
+    "max-line-length": [
+      true,
+      {
+        "limit": 140,
+        "ignore-pattern": "^import |^export {(.*?)}"
+      }
+    ],
+    "member-access": [true, "no-public"],
     "member-ordering": [
       true,
       {
@@ -319,7 +281,54 @@
       true,
       "allow-null-check"
     ],
+    "typedef": [
+      true,
+      "parameter",
+      "arrow-parameter",
+      "arrow-call-signature",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration",
+      "object-destructuring",
+      "array-destructuring",
+      "call-signature"
+    ],
+    "typedef-whitespace": {
+      "options": [
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ]
+    },
     "unified-signatures": true,
-    "no-consecutive-blank-lines": true
+    "variable-name": false,
+    "whitespace": [
+      true,
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "no-consecutive-blank-lines": true,
+    "rxjs-no-subject-value": true,
+    "rxjs-no-unsafe-takeuntil": true,
+    "rxjs-no-internal": true,
+    "rxjs-no-create": true,
+    "rxjs-finnish": true,
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ]
   }
 }
