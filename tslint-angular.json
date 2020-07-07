@@ -77,6 +77,27 @@
       "check-type",
       "check-typecast"
     ],
+    "ban-types": [
+      true,
+      ["Object", "Use {} instead."],
+      ["String", "Use string instead"],
+      ["Boolean", "Use boolean instead"],
+      ["Number", "Use number instead"]
+    ],
+    "member-access": [true, "no-public"],
+    "no-parameter-reassignment": true,
+    "ban-comma-operator": true,
+    "no-unnecessary-class": true,
+    "no-object-literal-type-assertion": true,
+    "no-unused-variable": [true, {"ignore-pattern": "^_"}],
+    "no-use-before-declare": true,
+    "typeof-compare": true,
+    "invalid-void": true,
+    "prefer-readonly": true,
+    "file-name-casing": "kebab-case",
+    "no-angle-bracket-type-assertion": true,
+    "prefer-template": true,
+    "unnecessary-constructor": [true, {"check-super-calls": true}],
     "contextual-decorator": true,
     "contextual-lifecycle": true,
     "no-lifecycle-call": true,
@@ -110,7 +131,7 @@
       "allowed-numbers": [-1, 0, 1]
     }],
     "object-shorthand-properties-first": true,
-    "no-static-this": true,
+    "static-this": true,
     "no-return-undefined": true,
     "no-else-after-return": true,
     "no-unnecessary-else": true,
@@ -242,7 +263,6 @@
     "import-spacing": true,
     "interface-over-type-literal": true,
     "label-position": true,
-    "member-access": false,
     "member-ordering": [
       true,
       {
