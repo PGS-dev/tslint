@@ -284,7 +284,6 @@
       true,
       "parameter",
       "arrow-parameter",
-      "arrow-call-signature",
       "property-declaration",
       "variable-declaration",
       "member-variable-declaration",

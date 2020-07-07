@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [10.1.2] - 2020.07.08
+
+### Updated
+
+- General TSLint rules:
+    - typedef
+
 ## [10.1.1] - 2020.07.08
 
 ### Removed
