@@ -20,7 +20,9 @@
         "ignore-pattern": "^import |^export {(.*?)}"
       }
     ],
-    "no-any": true,
+    "no-any": {
+      "severity": "warning"
+    },
     "no-redundant-jsdoc": true,
     "no-var-requires": false,
     "space-before-function-paren": {
